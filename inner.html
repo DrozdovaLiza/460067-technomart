@@ -46,17 +46,11 @@
           <li class="chain-item"><a href="equipmentitem.html">Перфораторы</a></li>
         </ul>
         <h1>Перфораторы</h1> 
-        <section>
         <h2>Фильтр:</h2>
+        <h3>цена:</h3>
         <form method="get" action="search.html" class="filter">
-          <fieldset>
-            <legend>Цена:</legend>
-              <ul>
-                <li>0</li>
-                <li>30000</li>
-              </ul>
-          </fieldset>
-        </section>
+        <input type="range" name="cost" min="0" max="30000" step="1">
+          <output name="costoutput"></output>
         <section>
           <fieldset>
             <legend>Производители:</legend>
