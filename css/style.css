@@ -1,0 +1,28 @@
+body {
+font-weight: Bold;
+font-size: 24px;
+font-family: "Gill Sans";
+color: #ffffff;
+line-height: 0.3;
+	
+}
+.title {
+  font-size: 30px;
+  font-family: "Cuprum";
+  color: rgb(61, 84, 110);
+  line-height: 1;
+  font-weight: regular;
+}
+.title-block {
+  font-size: 30px;
+  font-family: "Cuprum";
+  color: rgb(0, 0, 0);
+  line-height: 0.8;
+}
+
+
+
+
+
+
+

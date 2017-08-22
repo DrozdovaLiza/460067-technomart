@@ -50,10 +50,10 @@
         <div class="container">
         <aside>
           <h2>Фильтр:</h2>
-          <h3>цена:</h3>
-            <form method="get" action="search.html" class="filter">
-            <input type="range" name="cost" min="0" max="30000" step="1">
-              <output name="costoutput"></output>
+          <form method="get" action="search.html" class="filter">
+            <h3>цена:</h3>
+              <label class="visually-hidden">Минимальная цена<input type="text" name="mincost"></label>
+              <label class="visually-hidden">Максимальная цена<input type="text" name="maxcost"></label>
           <section>
             <fieldset>
               <legend>Производители:</legend>
@@ -66,24 +66,24 @@
           <section>
             <fieldset>
               <legend>Питание:</legend>
-                <label>Аккумуляторные<input type="radio" name="first" checked></label>>
+                <label>Аккумуляторные<input type="radio" name="first" checked></label>
                 <label>Сетевые<input type="radio" name="second"></label>
             </fieldset>
           </section>
             <button type="submit" class="filter-button button">Показать</button>
-            </form>  
+          </form>  
         </aside>
         </div>    
           <section class="filter">
             <form method="get" action="filter.html">
               <h2>Сортировка</h2>
                 <ul>
-                  <li>По цене <a href="filter.html"></a> 
-                    <span class="visually-hidden up">Стрелочка вверх</span><span class="visually-hidden down">Стрелочка вниз</span>
+                  <li><a href="filter.html">По цене</a> 
+                    <a class="visually-hidden up">Стрелочка вверх</a>
+                    <a class="visually-hidden down">Стрелочка вниз</a>
                   </li>
-                  <li>По типу <a href="filter.html"></a></li>
-                  <li>По цене <a href="filter.html"></a></li>
-                  <li>По функционалу <a href="filter.html"></a></li>
+                  <li><a href="filter.html">По типу</a></li>
+                  <li><a href="filter.html">По функционалу</a></li>
                 </ul> 
             </form>
           </section>
