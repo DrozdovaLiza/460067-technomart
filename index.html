@@ -6,11 +6,12 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="first-header">
+    <header>
       <div class="container">
         <a class="logo"><img src="logo.svg" width="200" height="50" alt="Логотип «Техномарт»"> </a>
         <form class="header-form" method="post" action="https://htmlacademy.ru">
-          <input type="search" name="search">
+          <label class="visually-hidden" for="block-search">Поиск</label>
+          <input type="search" name="search" id="block-search">
         </form>
         <a href="bookmarks.html">Закладки: <span>0</span></a>
         <a href="basket.html">Корзина: <span>0</span></a>
@@ -47,11 +48,10 @@
      	   <h2 class="visually-hidden">Наши предложения</h2>
      	   <ul>
      	     <li class="material">
-               <img src="img/icon-1.png">
+             <img src="img/icon-1.png">
      		   <h3>Материалы</h3>
              <img src="img/newflag.png">
      		   <button class="button">На любой вкус</button>
-     		   <p>new</p>
      		 </li>
      		 <li class="instrument">
                <img src="img/icon-2.png">
@@ -73,15 +73,14 @@
      		   <h3>Доставка</h3>
      			<button class="button">бесплатно</button>>
      		 </li>
-           </ul>
-         </div>    
+           </ul>    
      	   <figure class="gallery">
      		  <figcaption>
                 <p>Перфораторы<p>Настоящие мужские игрушки</p></p>>
                 <img src="img/group1.jpg">
-              </figcaption>
+                <a href="catalog.html" class="button-square">Открыть каталог</a>
+          </figcaption>
      	   </figure>	
-     	   <a href="catalog.html" class="button-square">Открыть каталог</a>
      	</section>
      	<section>
      	  <h2 class="visually-hidden">Популярные товары</h2>
@@ -203,7 +202,7 @@
      	</section>
       </div>  
     </main>  
-    <footer class="first-footer">
+    <footer>
       <div class="container">
      	<img src="logo.svg" width="200" height="50" alt="Логотип «Техномарт»">
      	<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
@@ -214,15 +213,13 @@
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="deliver.html">Доставка</a></li>
           <li><a href="contact.html">Контакты</a></li>
-     	  </ul>
-      <div class="container">    
+     	  </ul>    
      	  <ul>
      		  <li><a href="material.html">Материалы</a></li>
           <li><a href="equipment.html">Техника</a></li>
           <li><a href="equipment2.html">Инструмент</a></li>
           <li><a href="offers.html">Спецпредложения</a></li>
         </ul>
-      </div>
       </div>
       <div class="container">    
      	<p>2010-2016 Компания "Техномарт" <br>
@@ -250,10 +247,8 @@
         <input class="login-password" type="password" name="password" value="Пароль">
       </p>
       <p class="login-password-info">
-        <label class="login-checkbox"></label> 
-        <input type="checkbox" name="rememder" class="visually-hidden">
-        <span class="checkbox-indicator> Запомните меня </span>
-        </label>
+        <label class="login-checkbox">Запомните меня</label> 
+        <input type="checkbox" name="rememder" class="visually-hidden" id="login-checkbox">
         <a class="restore" href="#"> Я забыл пароль!</a>
       </p>
         <button class="button" tupe="submit">Войти</button>

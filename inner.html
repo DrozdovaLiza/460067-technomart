@@ -5,27 +5,27 @@
     <title>Техномарт</title>
   </head>
   <body>
-    <header class="first-header">
+    <header>
       <div class="container">
         <a> <img src="logo.svg" width="200" height="50" alt="Логотип «Техномарт»"> </a>
         <form class="header-form" method="post" action="https://htmlacademy.ru">
-          <input type="search" name="search">
+          <label for="block-search" class="visually-hidden">Поиск</label>
+          <input type="search" name="search" id="block-search">
         </form>
         <a href="bookmarks.html">Закладки: <span>0</span></a>
         <a href="basket.html">Корзина: <span>10</span></a>
         <a class="button" href="order.html">Оформить заказ</a>
       </div>
       <div class="container">
-        <div class="container">
-          <p class="introduction">Интернет-магазин<br>
+        <p class="introduction">Интернет-магазин<br>
           строительных материалов<br>
           и инструментов для ремонта
-          </p>
-          <div class="telephone">+7 (812) 555-05-55 </div>
-          <span class="address"> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-          <div class="myname"> Равшан Джамшурович<a href="myname.html"></a>
-          <a href="myorder.html">Мои заказы</a>
-          <a href="myroom.html">Личный кабинет</a>   
+        </p>
+        <div class="telephone">+7 (812) 555-05-55 </div>
+        <span class="address"> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+        <div class="myname"><a>Равшан Джамшурович</a></div>
+        <a>Мои заказы</a>
+        <a>Личный кабинет</a>   
         <nav class="navigation">
           <ul class="main-navigation">
             <li><a class="main">Главная</a></li> 
@@ -47,8 +47,8 @@
           <li class="chain-item"><a href="equipmentitem.html">Перфораторы</a></li>
         </ul>
         <h1>Перфораторы</h1> 
-        <div class="container">
         <aside>
+         <div class="container">
           <h2>Фильтр:</h2>
           <form method="get" action="search.html" class="filter">
             <h3>цена:</h3>
@@ -71,9 +71,9 @@
             </fieldset>
           </section>
             <button type="submit" class="filter-button button">Показать</button>
-          </form>  
-        </aside>
-        </div>    
+          </form> 
+         </div>   
+        </aside>    
           <section class="filter">
             <form method="get" action="filter.html">
               <h2>Сортировка</h2>
@@ -147,11 +147,11 @@
           </ul>    
         </section>
         <section>
-          <ul class="pagination-list">
+          <ul class="breadcrumbs">
             <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
             <li class="pagination-item"><a href="#">2</a></li>
             <li class="pagination-item"><a href="#">3</a></li>
-            <button class="pagination-item">следующая</button></li>
+            <li><button type="button" class="pagination-item">следующая</button></li>
           </ul> 
         </section>
         <section>
@@ -160,7 +160,7 @@
         </section>
       </main>
 
-         <footer class="first-footer">
+         <footer>
       <div class="container">
       <img src="logo.svg" width="200" height="50" alt="Логотип «Техномарт»">
       <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
@@ -171,15 +171,13 @@
             <li><a href="catalog.html">Каталог</a></li>
             <li><a href="deliver.html">Доставка</a></li>
             <li><a href="contact.html">Контакты</a></li>
-        </ul>
-        <div class="container">    
+        </ul>    
         <ul>
         <li><a href="material.html">Материалы</a></li>
             <li><a href="equipment.html">Техника</a></li>
             <li><a href="equipment2.html">Инструмент</a></li>
             <li><a href="offers.html">Спецпредложения</a></li>
           </ul>
-        </div>
       </div>
       <div class="container">    
       <p>2010-2016 Компания "Техномарт" <br>
