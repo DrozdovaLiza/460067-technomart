@@ -5,7 +5,7 @@ body {
   font-family: "Cuprum", "Gill Sans", sans-serif; 
   font-size: 17px;
   line-height: 14px;
-  color: #ffffff;
+  color: #000000;
   text-transform: none;
   
   background-color: #ffffff;
@@ -16,21 +16,25 @@ a {
   color: #ffffff;
 }
 
+.visually-hidden {
+  color: transparent;
+}
+
 .first-header {
   background-color: #33445a;
 }
 
-.button.header-button,
-.button.header-button:active {
+.button-order,
+.button-order:active {
   background-color: #6db254;
   line-height: auto;
 }
 
-.button.header-button:hover {
+.button-order:hover {
   background-color: #5fbb2d;
 }
 
-.button.header-button:focus {
+.button-order:focus {
   background-color: #518534;
 }
 
@@ -51,10 +55,10 @@ a {
   background-color: #f4f7f9;
 }
 
-.button.search:hover {
+.button-search:hover {
   background-color: #212a3a;
 }
-.button.search:active {
+.button-search:active {
   background-color: #ffffff;
   color: #000000;
 }
@@ -146,26 +150,31 @@ button:active {
 .material {
   background-color: #ffbf47;
   background-size: 300px 124px;
+  list-style: none;
 }
 
 .instrument {
   background-color: #3bbce3;
   background-size: 300px 124px;
+  list-style: none;
 }
 
 .equipment {
   background-color: #dc91d8;
   background-size: 300px 124px;
+  list-style: none;
 }
 
 .sale {
   background-color: #8ed78f;
   background-size: 300px 124px;
+  list-style: none;
 }
 
 .delivery {
   background-color: #ffc047;
   background-size: 300px 124px;
+  list-style: none;
 }
 
 .offers-item {
@@ -181,6 +190,11 @@ button:active {
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
+  color: #ffffff;
+}
+
+.text-gallery-small {
+  color: #ffffff;
 }
 
 .all-button {
@@ -207,6 +221,7 @@ button:active {
 
 .catalog-item {
   border: 1px solid #eaeaea;
+  list-style: none;
 }
 
 .title {
@@ -306,6 +321,10 @@ button:active {
   background-size: 143px 39px;
 }
 
+.manufacture-list {
+  list-style: none;
+}
+
 .manufacture-item {
   border: 1px solid #eaeaea;
 }
@@ -340,6 +359,10 @@ button:active {
   font-weight: regular;
   text-transform: none;
   color: #000000;
+}
+
+.services {
+  list-style: none;
 }
 
 .services-item {
@@ -411,13 +434,15 @@ button:active {
   text-transform: none;
 }
 
-.social-button {
+.social-link {
   background-color: #212a3a;
+  list-style: none;
 }
 
-.social-button:active,
-.social-button:focus {
+.social-link:active,
+.social-link:focus {
   background-color: #ee3643;
+  list-style: none;
 }
 
 .our-contact {
@@ -428,7 +453,7 @@ button:active {
   text-transform: none;
 }
 
-a .our-contact {
+.our-contact a {
   font-size: 16px;
   line-height: 18px;
   font-weight: regular;
@@ -436,12 +461,12 @@ a .our-contact {
   text-transform: none;
 }
 
-a .our-contact:focus,
-a .our-contact:hover {
+.our-contact a:focus,
+.our-contact a:hover {
   text-decoration: underline;
 }
 
-a .our-contact:active {
+.our-contact a:active {
   color: #ee3643;
 }
 
@@ -486,6 +511,7 @@ a .our-contact:active {
   font-weight: regular;
   color: #000000;
   text-transform: uppercase;
+  list-style: none;
 }
 
 .main-title {
@@ -517,7 +543,7 @@ a .our-contact:active {
 }
 
 .top-filter {
-  color: #f4f8f9;
+  color: #ececec;
   border-bottom: 1px dashed #ee3643; 
 }
 
@@ -563,14 +589,20 @@ a .our-contact:active {
 }
 
 .pagination-item:focus {
+  color: #000000;
   border: 1px solid #bdc6ca;
+  list-style: none;
 }
 
 .pagination-item:active {
   border: 1px solid #ee3643;
+  color: #000000;
+  list-style: none;
+} 
 
 .pagination-item-current {
   background-color: #ee3643;
+  list-style: none;
 }
 
 .checkbox {
