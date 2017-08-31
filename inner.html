@@ -11,16 +11,18 @@
   <body>
     <header>
       <div class="first-header">
-        <div class="container">
+        <div class="first-header-navigation">
           <a> <img src="logo.svg" width="220" height="48" alt="Логотип «Техномарт»"> </a>
           <form class="header-form" method="post" action="https://htmlacademy.ru">
-            <label class="button search" for="block-search" class="visually-hidden">Поиск</label>
-            <input type="search" name="search" id="block-search">
+            <label for="block-search" class="visually-hidden">Поиск</label>
+            <input type="search" name="search" id="block-search" placeholder="Поиск">
           </form>
-          <a class="header-button" href="bookmarks.html">Закладки: <span>0</span></a>
-          <a class="basket" href="basket.html">Корзина: <span>10</span></a>
-          <a class="button-order" href="order.html">Оформить заказ</a>
-        </div>
+        </div>  
+          <div class="user-navigation">
+            <a class="header-button" href="bookmarks.html">Закладки: <span>0</span></a>
+            <a class="basket" href="basket.html">Корзина: <span>10</span></a>
+            <a class="button-order" href="order.html">Оформить заказ</a>
+          </div>
       </div>
       <div class="second-header">
         <div class="container">
@@ -54,15 +56,17 @@
           <li class="breadcrumps-item"><a href="equipment.html">Инструмент</a></li>
           <li class="breadcrumps-item"><a href="equipmentitem.html">Перфораторы</a></li>
         </ul>
-        <h1 class="main-title">Перфораторы</h1> 
+        <h1 class="main-title">Перфораторы</h1>
+        <div class="galery">
+        <div class="filter-menu"> 
         <aside>
           <h2 class="filter">Фильтр:</h2>
           <form method="get" action="search.html" class="filter">
             <h3 class="filter-title">цена:</h3>
               <label class="visually-hidden">Минимальная цена<input class="filter" type="text" name="mincost"></label>
               <label class="visually-hidden ">Максимальная цена<input class="filter" type="text" name="maxcost"></label>
-          <section>
-            <div class="container">
+          <section class="manufacture">
+            <div>
               <fieldset>
                 <legend class="filter-title">Производители:</legend>
                   <label class="manufacture-name">BOSH <input class="checkbox" type="checkbox" name="bosh" checked></label>
@@ -84,9 +88,10 @@
           </form>
             </div>
           </section>    
-        </aside>    
+        </aside>
+        </div>    
           <section class="filter">
-            <div class="container">
+            <div class="galery-column">
               <form method="get" action="filter.html">
               <h2>Сортировка</h2>
                 <ul>
@@ -98,7 +103,6 @@
                     <label class="visually-hidden">Стрелочка вниз<a class="filter top-filter"></a></label>
                 </ul> 
               </form>
-            </div>
           </section>
           <section class="catalog">
             <div class="container">
@@ -195,8 +199,10 @@
               </ul>
             </div>    
           </section>
+          </div>
+          </div>
           <section>
-            <div class="container">
+            <div class="pagination">
               <ul class="pagination-list">
                 <li class="pagination-item-current"><a href="#">1</a></li>
                 <li class="pagination-item"><a href="#">2</a></li>
@@ -206,7 +212,7 @@
             </div> 
           </section>
           <section>
-            <div class="container">
+            <div class="perforation-text">
               <h2 class="title-block">Пара слов о перфораторах</h2>
               <p class="services-text">Перфоратор-универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электро механические и пневманические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
             </div>  
@@ -216,16 +222,21 @@
       <footer>
         <div class="first-footer">
           <div class="container">
+            <div class="logotip">
             <img src="logo.svg" width="220" height="66" alt="Логотип «Техномарт»">
+            </div>
             <p class="footer-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
            +7 (812) 555-05-5</p>
+            <div class="menu-footer">
             <ul class="menu-footer">
               <li><a href="compain.html">Компания</a></li>
               <li><a href="news.html">Новости</a></li>
               <li><a href="catalog.html">Каталог</a></li>
               <li><a href="deliver.html">Доставка</a></li>
               <li><a href="contact.html">Контакты</a></li>
-            </ul>    
+            </ul> 
+            </div>
+            <div class="second-menu-footer">   
             <ul class="second-menu-footer">
               <li><a href="material.html">Материалы</a></li>
               <li><a href="equipment.html">Техника</a></li>
@@ -238,11 +249,13 @@
           <div class="container">    
             <p class="second-footer-text">2010-2016 Компания "Техномарт" <br>
             Все права защищены</p>
+            <div class="social-link">
             <ul class="social-link">
               <li><a class="visually-hidden" href="#">Вконтакте</a><img src="img/vk-icon.png" width="26" height="17"></li> 
               <li><a class="visually-hidden" href="#">Фейсбук</a><img src="img/fb-icon.png" width="14" height="25"></li>
               <li><a class="visually-hidden" href="#">Инстаграм</a><img src="img/insta-icon.png" width="22" height="23"></li>
             </ul>
+            </div>
             <p class="our-contact">Обратная связь <a href="mail.ru">mail@htmlacademy.ru</a></p>
             <p class="our-contact">Разработано <a href="htmlacademy.ru">htmlacademy.ru</a></p>
           </div>

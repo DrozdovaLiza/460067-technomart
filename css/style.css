@@ -613,3 +613,161 @@ button:active {
 .ratio:focus {
   box-shadow: inline rgba (0, 0, 0, 0,35)
 }
+
+
+
+/* Сетка */
+
+
+
+
+
+.first-header {
+  min-height: 42px;
+  display: flex;
+  flex-direction: row;
+ }
+ 
+ .first-header-navigation {
+  justify-content: flex-start;
+  margin-left: 130px;
+ }
+
+ .user-navigation {
+  margin-left: 130px;
+  margin-top: 12px;
+  justify-content: flex-end;
+}
+
+.second-header {
+  min-height: 278;
+  display: flex;
+  flex-direction: row;
+}
+
+.introduction {
+  margin-left: 118px;
+  margin-top: 47px;
+}
+
+.telephone {
+  margin-left: 520px;
+  margin-top: 52px;
+  margin-bottom: 20px;
+}
+
+.address {
+  margin-left: 458px;
+  margin-top: 99px;
+}
+
+.myname {
+  margin-left: 816px;
+  margin-top: 60px; 
+}
+
+.main-navigation {
+  display: flex;
+  flex-direction: row;
+  margin-left: 130px;
+  margin-left: 130px;
+  padding-top: 20px;
+  padding-bottom: 23px;
+}
+
+.navigation-item {
+  justify-content: space-between;
+}
+
+.main-title {
+  display: flex;
+  min-height: 90px;
+  padding-bottom: 33px;
+  padding-top: 31px;
+  padding-left: 28px;
+  margin-left: 130px;
+  margin-right: 130px;
+}
+
+.filter-menu {
+  width: 220px;
+  min-height: 751px;
+}
+
+.catalog {
+  width: 700px;
+  height: 995px;
+}
+
+.filter {
+  min-height: 38px;
+  width: 700px;
+}
+
+.galery {
+  display: flex;
+}
+
+.galery-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  height: 39px;
+  min-width: 284px;
+  margin-left: 370px;
+  margin-bottom: 60px;
+}
+
+.perforation-text {
+  min-height: 261px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 130px;
+}
+
+.first-footer {
+  min-height: 194px;
+}
+
+.logotip {
+  margin-left: 130px;
+  margin-bottom: 31px;
+}
+
+.footer-text {
+  margin-left: 130px;
+}
+
+.menu-footer {
+  display: flex;
+}
+
+.second-menu-footer {
+  display: flex;
+}
+
+.second-footer {
+  min-height: 104px;
+}
+
+.second-footer-text {
+  margin-left: 130px;
+  padding-top: 35px;
+  display: flex;
+  flex-direction: row;
+}
+
+.social-link {
+  display: flex;
+  flex-direction: row;
+  margin-left: 520px;
+  padding: 0;
+}
+
+.our-contact {
+  display: flex;
+}
