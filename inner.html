@@ -11,11 +11,11 @@
   <body>
     <header>
       <div class="first-header">
-        <div class="first-header-navigation">
+        <div class="container first-header-navigation">
           <a> <img src="logo.svg" width="220" height="48" alt="Логотип «Техномарт»"> </a>
           <form class="header-form" method="post" action="https://htmlacademy.ru">
             <label for="block-search" class="visually-hidden">Поиск</label>
-            <input type="search" name="search" id="block-search" placeholder="Поиск">
+            <input class="search" type="search" name="search" id="block-search" placeholder="Поиск">
           </form>
         </div>  
           <div class="user-navigation">
@@ -24,49 +24,61 @@
             <a class="button-order" href="order.html">Оформить заказ</a>
           </div>
       </div>
-      <div class="second-header">
-        <div class="container">
-          <p class="introduction">Интернет-магазин<br>
+      <div class="container second-header">
+        <p class="introduction">Интернет-магазин<br>
           строительных материалов<br>
           и инструментов для ремонта
-          </p>
-          <div class="telephone">+7 (812) 555-05-55 </div>
-            <span class="address"> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-          <div class="myname"><a>Равшан Джамшурович</a></div>
-          <a class="mycabinet">Мои заказы</a>
-          <a>Личный кабинет</a>   
-          <nav class="navigation">
-            <ul class="main-navigation">
-              <li class="navigation-item"><a class="main">Главная</a></li> 
-              <li class="navigation-item"><a href="compain.html">Компания</a></li>
-              <li class="navigation-item"><a href="catalog.html">Каталог</a></li>
-              <li class="navigation-item"><a href="news.html">Новости</a></li>
-              <li class="navigation-item"><a href="offers.html">Спецпредложения</a></li>
-              <li class="navigation-item"><a href="deliver.html">Доставка</a></li>
-              <li class="navigation-item"><a href="contact.html">Контакты</a></li>
-            </ul>
-          </nav>
-        </div>
+        </p>
+        <div class="telephone">+7 (812) 555-05-55 </div>
+          <span class="address"> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+        <div class="myname-block"><a class="myname">Равшан Джамшурович</a></div>
+        <a class="mycabinet">Мои заказы</a>
+        <a class="mycabinet">Личный кабинет</a>   
+        <nav class="navigation">
+          <ul class="main-navigation">
+            <li class="navigation-item"><a class="main">Главная</a></li> 
+            <li class="navigation-item"><a href="compain.html">Компания</a></li>
+            <li class="navigation-item"><a href="catalog.html">Каталог</a></li>
+            <li class="navigation-item"><a href="news.html">Новости</a></li>
+            <li class="navigation-item"><a href="offers.html">Спецпредложения</a></li>
+            <li class="navigation-item"><a href="deliver.html">Доставка</a></li>
+            <li class="navigation-item"><a href="contact.html">Контакты</a></li>
+          </ul>
+        </nav>
       </div>  
-     </header>
-     <main>
-       <ul class="breadcrumbs">
-          <li class="breadcrumps-item visually hidden"><a href="main.html">Главная</a></li>
-          <li class="breadcrumps-item"><a href="catalog.html">Каталог</a></li>
-          <li class="breadcrumps-item"><a href="equipment.html">Инструмент</a></li>
-          <li class="breadcrumps-item"><a href="equipmentitem.html">Перфораторы</a></li>
-        </ul>
-        <h1 class="main-title">Перфораторы</h1>
-        <div class="galery">
-        <div class="filter-menu"> 
-        <aside>
-          <h2 class="filter">Фильтр:</h2>
+    </header>
+    <main>
+      <ul class="breadcrumbs">
+        <li class="breadcrumps-item"><a class="breadcrumps-item" href="main.html">Главная</a></li>
+        <li class="breadcrumps-item"><a class="breadcrumps-item" href="catalog.html">Каталог</a></li>
+        <li class="breadcrumps-item"><a class="breadcrumps-item" href="equipment.html">Инструмент</a></li>
+        <li class="breadcrumps-item"><a class="breadcrumps-item" href="equipmentitem.html">Перфораторы</a></li>
+      </ul>
+      <h1 class="main-title">Перфораторы</h1>
+      <div class="container">
+        <section class="first-filter-menu">
+          <form method="get" action="filter.html">
+            <h2>Сортировка</h2>
+              <ul class="filter-top-menu">
+                <li class="top-filter"><a class="top-filter" href="filter.html">По цене</a> 
+                </li>
+                <li class="top-filter"><a class="top-filter" href="filter.html">По типу</a></li>
+                <li class="top-filter"><a class="top-filter" href="filter.html">По функционалу</a></li>
+                  <label class="visually-hidden">Стрелочка вверх<a href="#" class="filter top-filter"></a></label>
+                  <label class="visually-hidden">Стрелочка вниз<a class="filter top-filter"></a></label>
+              </ul> 
+          </form>
+        </section>
+      </div>
+      <div class="container">  
+        <div class="main-filter"> 
+        <aside class="second-filter-menu">
           <form method="get" action="search.html" class="filter">
             <h3 class="filter-title">цена:</h3>
               <label class="visually-hidden">Минимальная цена<input class="filter" type="text" name="mincost"></label>
               <label class="visually-hidden ">Максимальная цена<input class="filter" type="text" name="maxcost"></label>
-          <section class="manufacture">
-            <div>
+            <section class="manufacture">
+            <div class="container">
               <fieldset>
                 <legend class="filter-title">Производители:</legend>
                   <label class="manufacture-name">BOSH <input class="checkbox" type="checkbox" name="bosh" checked></label>
@@ -75,9 +87,9 @@
                   <label class="manufacture-name">Dewalt<input class="checkbox" type="checkbox" name="dewalt"></label>
                   <label class="manufacture-name">Hitachi<input class="checkbox" type="checkbox" name="hitachi"></label>
               </fieldset>
+            </section>
             </div>
-          </section>
-          <section>
+            <section>
             <div class="container">
               <fieldset>
                 <legend class="filter-title">Питание:</legend>
@@ -85,28 +97,13 @@
                   <label class="filter-option">Сетевые<input class="ratio" type="radio" name="second"></label>
               </fieldset>
               <button type="submit" class="filter-button button">Показать</button>
-          </form>
             </div>
-          </section>    
-        </aside>
-        </div>    
-          <section class="filter">
-            <div class="galery-column">
-              <form method="get" action="filter.html">
-              <h2>Сортировка</h2>
-                <ul>
-                  <li class="filter top-filter"><a href="filter.html">По цене</a> 
-                  </li>
-                  <li class="filter top-filter"><a href="filter.html">По типу</a></li>
-                  <li class="filter top-filter"><a href="filter.html">По функционалу</a></li>
-                    <label class="visually-hidden">Стрелочка вверх<a href="#" class="filter top-filter"></a></label>
-                    <label class="visually-hidden">Стрелочка вниз<a class="filter top-filter"></a></label>
-                </ul> 
-              </form>
-          </section>
+          </section>     
+          </form>    
+        </aside>    
           <section class="catalog">
-            <div class="container">
-              <h2 class="visually-hidden">Список перфораторов</h2>
+          <div class="container">
+            <h2 class="visually-hidden">Список перфораторов</h2>
               <ul class="catalog-list">
                 <li class="catalog-item">
                   <h3 class="title-catalog-item"><a href="catalog-item.html">Перфоратор BOSH BFG 3000</a></h3>
@@ -199,8 +196,6 @@
               </ul>
             </div>    
           </section>
-          </div>
-          </div>
           <section>
             <div class="pagination">
               <ul class="pagination-list">
@@ -214,10 +209,10 @@
           <section>
             <div class="perforation-text">
               <h2 class="title-block">Пара слов о перфораторах</h2>
-              <p class="services-text">Перфоратор-универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электро механические и пневманические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+                <p class="services-text">Перфоратор-универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электро механические и пневманические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
             </div>  
           </section>
-       </main>
+    </main>
 
       <footer>
         <div class="first-footer">
