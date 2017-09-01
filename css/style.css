@@ -539,6 +539,7 @@ button:active {
 
 .main-filter {
   display: flex;
+  justify-content: space-between;
 }
 
 .filter-title {
@@ -778,6 +779,9 @@ button:active {
   margin-bottom: 23px;
 }
 
+.catalog-item: nth-child(3n) {
+  margin-right: 0px;
+}
 
 .pagination {
   display: flex;
