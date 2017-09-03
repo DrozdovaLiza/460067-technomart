@@ -640,6 +640,11 @@ button:active {
 /* Сетка */
 
 .container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.container {
   margin: 0 auto;
 }
 
@@ -799,7 +804,7 @@ button:active {
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
-  height: 996px;
+  height: 1200px;
   width: 800px;
 }
 
@@ -922,9 +927,13 @@ button:active {
 }
 
 .offer-list {
+  display: flex;
   flex-wrap: wrap;
-  width: 876px;
-  min-height: 410px;
+}
+
+.catalog-wrapper-column {
+  display: flex;
+  flex-direction: column;
 }
 
 .material,
