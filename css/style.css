@@ -249,8 +249,7 @@ button:active {
 
 .gallery {
   background-image: url("../img/group1.jpg");
-  background-position: 100% 100%
-  background-size: 621px 268px;
+  background-position: 100% 100%;
   background-repeat: no-repeat;
   background-color: #ffffff;
 }
@@ -985,11 +984,12 @@ button:active {
 .login-link-block {
   margin-left: 788px;
   margin-right: 10px;
-  padding-top: 14px;
+  padding-top: -40px;
   padding-bottom: 17px;
   padding-right: 27px;
   padding-left: 52px;
 }
+
 
 .offer-list {
   display: flex;
@@ -1095,5 +1095,6 @@ button:active {
 
 .all-manufactures,
 .all-goods {
-  margin-left: 273px;
+  margin-left: 373px;
+  flex-grow: 0; 
 }
