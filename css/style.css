@@ -1098,3 +1098,7 @@ button:active {
   margin-left: 373px;
   flex-grow: 0; 
 }
+
+.second-offer-wrapper {
+  display: flex;
+}
