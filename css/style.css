@@ -153,31 +153,31 @@ button:active {
 }
 
 .material {
-  background-image: url("img/icon-1.png");
+  background-image: url("../img/icon-1.jpg");
+  background-position: 90% 70%;
   background-repeat: no-repeat;
-  background-color: #ffc455;
   list-style: none;
 }
 
 .instrument {
-  background-image: url("img/icon-2.jpg");
-  background-position: 0 0 0 0;
+  background-image: url("../img/icon-2.jpg");
+  background-position: 90% 70%;
   background-repeat: no-repeat;
   background-color: #3bbce3;
   list-style: none;
 }
 
 .equipment {
-  background-image: url("img/icon-3.jpg");
-  background-position: 0 0 0 0;
+  background-image: url("../img/icon-3.jpg");
+  background-position: 90% 60%;
   background-repeat: no-repeat;
   background-color: #dc91d8;
   list-style: none;
 }
 
 .sale {
-  background-image: url("img/icon-4.jpg");
-  background-position: 0 0 0 0;
+  background-image: url("../img/icon-4.jpg");
+  background-position: 90% 70%;
   background-repeat: no-repeat;
   background-color: #8ed78f;
   list-style: none;
@@ -185,8 +185,8 @@ button:active {
 }
 
 .delivery {
-  background-image: url("img/icon-5.jpg");
-  background-position: 0 0 0 0;
+  background-image: url("../img/icon-5.jpg");
+  background-position: 90% 70%;
   background-repeat: no-repeat;
   background-color: #ffc047;
   list-style: none;
@@ -208,11 +208,49 @@ button:active {
   line-height: 30px;
   font-weight: bold;
   color: #ffffff;
+  padding-left: 21px;
+}
+
+.material-button {
+  margin-left: 23px;
+  margin-bottom: 23px;
+  margin-top: -23px;
+}
+
+.equipment-button {
+  margin-left: 23px;
+  margin-bottom: 23px;
+  margin-top: -23px;
+}
+
+.instrument-button {
+  margin-left: 23px;
+  margin-bottom: 23px;
+  margin-top: -23px;
+}
+
+.sale-button {
+  margin-left: 22px;
+  margin-top: -23px;
+}
+
+.delivery-button {
+  margin-left: 22px;
+  margin-top: -23px;
+}
+
+.title-sale {
+  padding-top: 24px;
+}
+
+.title-delivery {
+  padding-top: 24px;
 }
 
 .gallery {
-  background-image: url("img/group1.jpg");
-  background-position: 0 0 0 0;
+  background-image: url("../img/group1.jpg");
+  background-position: 100% 100%
+  background-size: 621px 268px;
   background-repeat: no-repeat;
   background-color: #ffffff;
 }
