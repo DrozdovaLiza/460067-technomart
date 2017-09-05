@@ -20,13 +20,13 @@
           <a class="logo"><img src="logo.svg" width="220" height="48" alt="Логотип «Техномарт»"> </a>
           <form class="header-form" method="post" action="https://htmlacademy.ru">
             <label class="visually-hidden" for="block-search">Поиск</label>
-            <input type="search" name="search" id="block-search" placeholder="Поиск" class="button-search">
+            <input class="search" type="search" name="search" id="block-search" placeholder="Поиск" class="button-search">
           </form>
         
         </div>
         
         <div class="user-navigation">  
-          <a class="header-button-bookmarks">Закладки: <span>0</span></a>
+          <a class="header-button ">Закладки: <span>0</span></a>
           <a class="header-button">Корзина: <span>0</span></a>
           <a class="button-order">Оформить заказ</a>
         </div>
@@ -101,7 +101,7 @@
           <figure class="gallery">
           <figcaption class="gallery">
             <p class="text-gallery">Перфораторы<p class="text-gallery-small"> Настоящие мужские игрушки</p></p>  
-            <a href="catalog.html" class="all-button">Открыть каталог</a>
+            <a href="catalog.html" class="all-button open-catalog">Открыть каталог</a>
           </figcaption>
         </figure> 
           
@@ -189,28 +189,28 @@
      		  
           <ul class="manufacture-list">
      		    <li class="manufacture-item">
-     		      <a href="manufacture.html"><img src="img/bosch.png" width="126" height="37" alt="bosch"></a>
+     		      <a href="manufacture.html"><center><img src="img/bosch.png" width="126" height="37" alt="bosch"></center></a>
      		    </li>
      		    <li class="manufacture-item">
-     		      <a href="manufacture.html"><img src="img/makita.png" width="123" height="40" alt="makita"></a>
+     		      <a href="manufacture.html"><center><img src="img/makita.png" width="123" height="40" alt="makita"></center></a>
      		    </li>
      		    <li class="manufacture-item">
-     		      <a href="manufacture.html"><img src="img/dewalt.png" width="146" height="44" alt="dewalt"></a>
+     		      <a href="manufacture.html"><center><img src="img/dewalt.png" width="146" height="44" alt="dewalt"></center></a>
      		    </li>
      		    <li class="manufacture-item">
-     		      <a href="manufacture.html"><img src="img/interrskol.png" width="184" height="32" alt="interrskol"></a>
+     		      <a href="manufacture.html"><center><img src="img/interrskol.png" width="184" height="32" alt="interrskol"></center></a>
      		    </li>
      		    <li class="manufacture-item">
-     		      <a href="manufacture.html"><img src="img/hitachi.png" width="169" height="31" alt="hitachi"></a>
+     		      <a href="manufacture.html"><center><img src="img/hitachi.png" width="169" height="31" alt="hitachi"></center></a>
      		    </li>
      		    <li class="manufacture-item">
-     		      <a href="manufacture.html"><img src="img/lg.png" width="121" height="73" alt="lg"></a>
+     		      <a href="manufacture.html"><center><img src="img/lg.png" width="121" height="73" alt="lg"></center></a>
      		    </li>
             <li class="manufacture-item">
-              <a href="manufacture.html"><img src="img/aeg.png" width="151" height="96" alt="aeg"></a>
+              <a href="manufacture.html"><center><img src="img/aeg.png" width="151" height="96" alt="aeg"></center></a>
             </li>
             <li class="manufacture-item">
-              <a href="manufacture.html"><img src="img/metabo.png" width="204" height="69" alt="metabo"></a>
+              <a href="manufacture.html"><center><img src="img/metabo.png" width="204" height="69" alt="metabo"></center></a>
             </li>
      		  </ul>
         </div>
@@ -220,32 +220,41 @@
      	    <h2 class="title-block">Сервисы</h2>
      	      <p class="services-block-text">Хороший интернет-магазин отличается от плохого не только ценами!<br>
      		Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными. </p>
+
+
+        <div class="catalog-wrapper-column">
+          <button class="services-delivery">Доставка</button>
+          <button class="services-garantee">Гарантия</button>
+          <button class="services-credit">Кредит</button>
+        </div>
+          
      		  <ul class="services">
      		    <li>
-              <img src="img/group3.png" width="468" height="261">
+              <img src="img/group3.png" width="468" height="261" style="margin-left: 600px;">
               <h3 class="services-item">Доставка</h3>
                 <p class="services-text">Мы с удовольствием доставим ваш товар прямо <br> к вашему подъезду совершенно бесплатно! <br> Ведь мы неплохо заработаем, <br> поднимая его на ваш этаж!</p>
      			  </li>  
      			  <li>
-              <img src="img/group4.png" width="389" height="283">
-              <h3 class="services-item">Гарантия</h3>
+              <img src="img/group4.png" width="389" height="283" style="margin-left: 600px;">
+              <h3 class="services-item"">Гарантия</h3>
      			  </li>  
      			  <li class="services-item">
-              <img src="img/equipment5.png" width="465" height="285">
+              <img src="img/equipment5.png" width="465" height="285" style="margin-left: 200px;">
               <h3 class="services-item">Кредит</h3>
      			  </li>
      		  </ul>
         </div>
      	</section>
-     	<section>
 
-      <div class="catalog-wrapper">
+      <div class="company-wrapper">
+     	  
+        <section>
 
         <div class="block">
      		  
           <h2 class="title-block">Компания "Техномарт"</h2>
      		    <p class="services-block-text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастербайтерах.</p>
-     		    <p class="services-block-text">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
+     		    <p class="services-block-text">Мы можем доставить ваш товар в самые отдаленные точки России!<br> Техномарт работает со многими транспортными компаниями:</p>
      		  <ul class="list">
      		    <li>Деловые линии</li>
      		    <li>Автотрейдинг</li>
@@ -263,12 +272,12 @@
      		    заехав в наш офис</p>
      		    <a class="map-button" href="map.html"></a>
               <img src="img/group5.png" width="300" height="162" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-     		    <a class="all-button" href="call.html">Заблудились? Пишите нам! </a>
+     		    <a class="all-button contact-button" href="call.html">Заблудились? Пишите нам! </a>
         </div>
 
      	</section> 
       
-      </div> 
+    </div> 
     
     </main>  
     <footer>

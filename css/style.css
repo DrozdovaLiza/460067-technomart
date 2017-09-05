@@ -153,14 +153,15 @@ button:active {
 }
 
 .material {
-  background-image: url("../img/icon-1.jpg");
+  background-image: url("../img/icon-1.png");
   background-position: 90% 70%;
   background-repeat: no-repeat;
+  background-color: #ffc352;
   list-style: none;
 }
 
 .instrument {
-  background-image: url("../img/icon-2.jpg");
+  background-image: url("../img/icon-2.png");
   background-position: 90% 70%;
   background-repeat: no-repeat;
   background-color: #3bbce3;
@@ -168,7 +169,7 @@ button:active {
 }
 
 .equipment {
-  background-image: url("../img/icon-3.jpg");
+  background-image: url("../img/icon-3.png");
   background-position: 90% 60%;
   background-repeat: no-repeat;
   background-color: #dc91d8;
@@ -176,21 +177,22 @@ button:active {
 }
 
 .sale {
-  background-image: url("../img/icon-4.jpg");
+  background-image: url("../img/icon-4.png");
   background-position: 90% 70%;
   background-repeat: no-repeat;
   background-color: #8ed78f;
   list-style: none;
-  margin-left: 640px;
+  margin-left: -60px;
+  margin-top: -20px;
 }
 
 .delivery {
-  background-image: url("../img/icon-5.jpg");
+  background-image: url("../img/icon-5.png");
   background-position: 90% 70%;
   background-repeat: no-repeat;
   background-color: #ffc047;
   list-style: none;
-  margin-left: 640px;
+  margin-left: -60px;
 }
 
 .material,
@@ -198,7 +200,7 @@ button:active {
 .equipment,
 .sale,
 .delivery {
-  min-width: 300px;
+  width: 300px;
   height: 124px;
 }
 
@@ -249,9 +251,10 @@ button:active {
 
 .gallery {
   background-image: url("../img/group1.jpg");
-  background-position: 100% 100%;
   background-repeat: no-repeat;
   background-color: #ffffff;
+  height: 240px;
+  width: 621px;
 }
 
 .text-gallery {
@@ -285,7 +288,7 @@ button:active {
 
 .head-section {
   background-color: #f9f5f0;
-  background-size: 940px 88px;
+  display: flex;
 }
 
 .catalog-item {
@@ -536,6 +539,7 @@ button:active {
   font-weight: regular;
   color: #ffd180;
   text-transform: none;
+  margin-left: -80px;
 }
 
 .our-contact a:focus,
@@ -589,6 +593,7 @@ button:active {
   color: #000000;
   text-transform: uppercase;
   list-style: none;
+  margin-right: 30px;
 }
 
 .main-title {
@@ -608,6 +613,7 @@ button:active {
   color: #000000;
   text-transform: uppercase;
   background-color: #f7f3ec;
+  display: flex;
 }
 
 .main-filter {
@@ -627,7 +633,8 @@ button:active {
 .top-filter {
   color: #000000;
   border-bottom: 1px dashed #ee3643;
-  list-style: none; 
+  list-style: none;
+  margin-right: 65px; 
 }
 
 .top-filter:hover,
@@ -825,7 +832,7 @@ button:active {
   min-height: 88px;
   padding-top: 31px;
   padding-left: 28px;
-  margin-left: 130px;
+  margin-left: 55px;
   margin-right: 130px;
 }
 
@@ -837,7 +844,7 @@ button:active {
   color: #000000;
   text-transform: uppercase;
   background-color: #f7f3ec;
-  margin-left: 130px;
+  margin-left: 55px;
   min-width: 220px;
 }
 
@@ -848,7 +855,7 @@ button:active {
   margin-left: 20px;
 }
 
-.second-filter-menu {
+.menu {
   display: flex;
   width: 220px;
   min-height: 700px;
@@ -867,16 +874,15 @@ button:active {
 
 .catalog-list {
   display: flex;
-  flex-wrap: wrap;
-  height: 1200px;
   width: 800px;
+  margin-left: 12px;
 }
 
 .catalog-item {
   margin-right: 20px;
   margin-bottom: 23px;
   width: 220px;
-  height: 319px;
+  height: 322px;
 }
 
 .pagination {
@@ -899,6 +905,7 @@ button:active {
 
 .title-block {
   margin-left: 130px;
+  margin-top: 67px;
 }
 
 .first-footer {
@@ -954,7 +961,8 @@ button:active {
   margin-left: 119px;
 }
 
-.catalog-wrapper {
+.catalog-wrapper,
+.company-wrapper {
   display: flex;
 }
 
@@ -1001,6 +1009,7 @@ button:active {
   flex-direction: column;
 }
 
+
 .material,
 .instrument {
   margin-right: 20px;
@@ -1009,6 +1018,7 @@ button:active {
 .offer-wrapper {
   display: flex;
   flex-wrap: wrap;
+  margin-left: 10px;
 }
 
 .catalog-wrapper-column {
@@ -1017,7 +1027,6 @@ button:active {
 
 .head-section {
   display: flex;
-  flex: 0 0 auto;
 }
 
 .all-button {
@@ -1040,13 +1049,14 @@ button:active {
 .manufacture-list {
   display: flex;
   flex-wrap: wrap;
-  width: 950px;
+  width: 1000px;
   min-height: 317px;
+  margin-left: 12px;
 }
 
 .manufacture-item {
-  width: 220;
-  height: 148;
+  width: 220px;
+  height: 148px;
   margin-right: 20px;
   margin-bottom: 23px;
 }
@@ -1062,13 +1072,18 @@ button:active {
 }
 
 .head-section {
-  margin-right: 130px;
-  margin-left: 130px;
+  margin-right: 55px;
+  margin-left: 55px;
 }
 
-.services-text,
 .services-item {
   margin-left: 450px;
+  margin-top: -350px;
+}
+
+.services-text {
+  margin-left: 450px;
+  margin-top: -250px;
 }
 
 .title-block {
@@ -1085,8 +1100,17 @@ button:active {
 }
 
 .block {
-  width: 550px;
+  width: 800px;
   min-height: 392px;
+}
+
+.map-button {
+  margin-left: 135px;
+}
+
+.contact-button {
+  margin-left: -305px;
+  margin-bottom: -50px;
 }
 
 .about-company {
@@ -1101,4 +1125,48 @@ button:active {
 
 .second-offer-wrapper {
   display: flex;
+  justify-content:
+  margin-left: 10px; 
+}
+
+.services-delivery,
+.services-garantee,
+.services-credit {
+  width: 240px;
+  height: 62px;
+  background-color: #3d546e;
+  box-shadow: inline solid 1px;
+  margin-left: 100px;
+}
+
+.services-delivery {
+  margin-top: 71px;
+}
+
+.open-catalog {
+  margin-top: -40px;
+}
+
+.equipment-list {
+  flex-wrap: wrap;
+  margin-left: -250px;
+}
+
+.second-filter-menu {
+  width: 220px;
+  margin-left: 55px;
+}
+
+.equipment-text {
+  margin-left: 130px;
+}
+
+.pagination-item {
+  width: 39px;
+  height: 37px;
+}
+
+.pagination-item-list {
+  width: 147px;
+  height: 38px;
 }
