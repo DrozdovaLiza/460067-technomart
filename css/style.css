@@ -742,19 +742,29 @@ button:active {
   display: flex;
 }
 
-.header-button {
+.header-button-bookmarks,
+.header-button-busket {
   padding-top: 12px;
-  margin-left: 207px;
-  padding-right: 26px;
-  padding-left: 11px;
+  padding-right: 30px;
+  padding-left: 50px;
   padding-bottom: 12px;
+  flex-wrap: nowrap;
 }
 
-.header-button-bookmarks {
-  padding-top: 12px;
-  padding-right: 26px;
-  padding-left: 11px;
-  padding-bottom: 12px;
+.header-button-bookmarks::before {
+ content: "";
+ position: absolute;
+ top: 27px;
+ left: 18px;
+
+ width: 17px;
+ height: 17px;
+
+ background-image: url("../img/icon-bookmark.svg");
+ background-repeat: repeat;
+ background-position: 0 0;
+
+ opacity: 0.35; 
 }
 
 .basket {
