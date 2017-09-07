@@ -303,6 +303,7 @@ button:active {
   text-transform: uppercase;
   color: #3d546e;
   margin-left: 25px;
+  flex-wrap: nowrap;
 }
 
 .title-catalog-item {
@@ -909,6 +910,7 @@ button:active {
 
 .first-footer {
   min-height: 194px;
+  width: 100%;
 }
 
 .logotip {
@@ -941,6 +943,7 @@ button:active {
 .second-footer {
   min-height: 104px;
   display: flex;
+  width: 100%;
 }
 
 .second-footer-text {
@@ -1132,10 +1135,20 @@ button:active {
   margin-left: -70px;
 }
 
-.all-manufactures,
+.all-manufactures {
+  margin-left: 373px;
+  flex-grow: 0;
+  display: inline-block;
+  margin-top: 26px;
+  margin-bottom: 26px;
+}
+
 .all-goods {
   margin-left: 373px;
-  flex-grow: 0; 
+  flex-grow: 0;
+  display: inline-block;
+  margin-top: 26px;
+  margin-bottom: 26px;
 }
 
 .second-offer-wrapper {
