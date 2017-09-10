@@ -75,6 +75,12 @@ a {
   background-color: #f4f7f9;
 }
 
+.header-form input {
+  background-color: #293449;
+  width: 240px;
+  height: 42px;
+}
+
 .button-search:hover {
   background-color: #212a3a;
 }
@@ -656,6 +662,7 @@ button:active {
   font-weight: regular;
   color: #ffffff;
   text-transform: none;
+  white-space: nowrap;
 }
 
 .social-link {
@@ -682,7 +689,7 @@ button:active {
   font-weight: regular;
   color: #ffd180;
   text-transform: none;
-  margin-left: -80px;
+  position: absolute;
 }
 .our-contact.call,
 .call a {
@@ -883,10 +890,6 @@ button:active {
   width: 940px;
   margin: 0 auto;
   padding: 0 10px;
-}
-
-.container {
-  margin: 0 auto;
 }
 
 .first-header {
@@ -1679,20 +1682,133 @@ button:active {
   display: block;
 }
 
-input [type="checkbox"] {
+input[type="checkbox"] {
   display: none;
 }
 
-input [type="checkbox"] + label {
+input[type="checkbox"] + label {
   position: relative;
-  padding-left: 14px;
+  padding-left: 40px;
+  margin-bottom: 18px;
+  display: inline-block;
+  vertical-align: top;
 }
 
-input [type="checkbox"] + label::before {
+input[type="checkbox"] + label::before {
   content: "";
   display: block;
   width: 25px;
   height: 25px;
-  background-image: url(../img/checkbox-off.svg) no-repeat;
+  background-image: url(../img/checkbox-off.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0px;
+  position: absolute;
+  left: 0px;
 }
 
+input[type="checkbox"]:checked + label::before {
+  background-image: url(../img/checkbox-on.svg);
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 18px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+input[type="radio"] + label::before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/radio-off.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0px;
+  position: absolute;
+  left: 0px;
+}
+
+input[type="radio"]:checked + label::before {
+  background-image: url(../img/radio-on.svg);
+}
+
+.range-filter {
+  width: 220px;
+}
+
+.range-controls {
+  position: relative;
+  height: 80px;
+  margin-bottom: 15px;
+  padding: 0 20px;
+  background: #f7f3ec;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.range-controls .scale {
+  margin-top: 39px;
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .perforator {
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  width: 4px;
+  height: 4px;
+  border: 8px solid white;
+  background: #ababab; 
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .max-toggle {
+  left: 145px;
+}
+
+.price-controls input {
+  width: 75px;
+  padding: 8px 10px;
+  margin-right: 28px;
+  border: none;
+  background: #f7f3ec;
+  font-family: "Cuprum", "Gill Sans", sans-serif; 
+  font-size: 21px;
+  line-height: 14px;
+  color: #000000;
+  text-transform: none;
+}
+
+.price-controls {
+  white-space: nowrap;
+}
+
+.call {
+  white-space: nowrap;
+} 
+
+.developed {
+  margin-left: 87px;
+}
+
+.call a {
+  left: 732px;
+}
+
+.developed a {
+  top: 1000px;
+}

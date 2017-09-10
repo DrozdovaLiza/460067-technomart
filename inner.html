@@ -114,16 +114,18 @@
         <aside class="second-filter-menu">
           <form method="get" action="search.html" class="filter">
 
-          <ul class="first-filter">
-            <h1 class="filter-title">цена:</h1>   
-              <li><label for="min-cost" class="visually-hidden">Минимальная цена</label>
-              <input class="min-cost" id="min-cost" type="text" name="mincost">
-              </li>
-              <li>
-              <label for="max-cost" class="visually-hidden ">Максимальная цена</label>
-              <input class="" type="text" id="max-cost" name="maxcost">
-            </li>
-          </ul>  
+            <h1 class="filter-title">цена:</h1> 
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale"><div style="width: 70%" class="perforator"></div></div>
+                  <div class="toggle min-toggle"></div>
+                  <div class="toggle max-toggle"></div>
+                </div>
+                <div class="price-controls">
+                <input class="min-price" type="text" value="0">
+                <input class="max-price" type="taxt" value="30000">
+                </div>
+              </div>     
 
           <ul class="second-filter">
             <h1 class="filter-title">Производители:</h1>
