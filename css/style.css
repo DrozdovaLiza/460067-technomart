@@ -232,8 +232,8 @@ button:active {
   background-repeat: no-repeat;
   background-color: #8ed78f;
   list-style: none;
-  margin-left: -60px;
-  margin-top: -20px;
+  margin-left: 20px;
+  margin-top: 0px;
 }
 
 .delivery {
@@ -242,7 +242,31 @@ button:active {
   background-repeat: no-repeat;
   background-color: #ffc047;
   list-style: none;
-  margin-left: -60px;
+  margin-left: 20px;
+}
+
+.myname {
+  background-image: url("../img/icon-user.svg");
+  background-position: 5% 40%;
+  background-repeat: no-repeat;
+}
+
+.myname::after {
+  background-image: url("../img/icon-logout.svg");
+  background-position: 50% 40%;
+  background-repeat: no-repeat;
+}
+
+.myname::after {
+  background-image: url("../img/icon-logout.svg");
+  background-position: 50% 40%;
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs {
+  background-image: url("../img/icon-home.svg");
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
 }
 
 .material,
@@ -315,6 +339,14 @@ button:active {
   background-color: #cccccc;
 }
 
+.material-button:active,
+.instrument-button:active,
+.equipment-button:active,
+.sale-button:active,
+.delivery-button:active {
+  background-color: #b2b2b2;
+}
+
 .title-sale {
   padding-top: 24px;
 }
@@ -329,6 +361,9 @@ button:active {
   background-color: #ffffff;
   height: 240px;
   width: 621px;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
 }
 
 .text-gallery {
@@ -345,6 +380,11 @@ button:active {
   padding-left: 25px;
   margin-top: -20px;
 }
+
+.second-offer-list {
+  margin: 0;
+  padding: 0;
+}  
 
 .all-button {
   font-size: 14px;
@@ -369,13 +409,17 @@ button:active {
 }
 
 .title {
+  padding: 0;
   font-size: 30px;
   line-height: 30px;
   font-weight: regular;
   text-transform: uppercase;
   color: #3d546e;
-  margin-left: 25px;
   flex-wrap: nowrap;
+  width: 378;
+  height: 48;
+  text-align: center;
+  margin-left: 19px;
 }
 
 .title-catalog-item {
@@ -496,13 +540,13 @@ button:active {
 
 .manufacture-item:hover {
   border: 1px solid #eaeaea;
-  box-shadow: inline 3px 3px rgba(0, 0, 0, 0,35);
+  box-shadow: inline 3px 3px solid rgba(0, 0, 0, 0.35);
   background-color: #ffffff;
 }
 
 .manufacture-item:active {
   border: 1px solid #eaeaea;
-  box-shadow: inline 3px 3px rgba(0, 0, 0, 0,35);
+  box-shadow: inline 3px 3px solid rgba(0, 0, 0, 0.35);
   background-color: #ffffff;
 }
 
@@ -597,9 +641,7 @@ button:active {
 }
 
 .menu-footer li:hover,
-.menu-footer li:focus,
-.second-menu-footer li:hover,
-.second-menu-footer li:focus {
+.second-menu-footer li:hover {
   text-decoration: underline;
 }
 
@@ -744,7 +786,8 @@ button:active {
   color: #000000;
   border-bottom: 1px dashed #ee3643;
   list-style: none;
-  margin-right: 65px; 
+  display: inline-block;
+  margin-top: 7px;
 }
 
 .top-filter:hover,
@@ -790,6 +833,15 @@ button:active {
   list-style: none;
 }
 
+.pagination-item-next {
+  border: 1px solid #e5e5e5;
+  background-color: #ffffff;
+  color: #000000;
+  width: 140px;
+  height: 38px;
+  text-align: center;
+}
+
 .pagination-item:focus {
   color: #000000;
   border: 1px solid #bdc6ca;
@@ -805,6 +857,13 @@ button:active {
 .pagination-item-current {
   background-color: #ee3643;
   list-style: none;
+  width: 38px;
+  height: 38px;
+}
+
+.pagination-item,
+.pagination-item-current {
+  margin-right: 10px;
 }
 
 .checkbox {
@@ -839,6 +898,8 @@ button:active {
  
  .first-header-navigation {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
  }
 
  .search {
@@ -855,10 +916,10 @@ button:active {
 
 .header-button-bookmarks,
 .header-button-basket {
+  width: 160px;
+  height: 43px;
+  text-align: center;
   padding-top: 13px;
-  padding-right: 30px;
-  padding-left: 50px;
-  padding-bottom: 13px;
   display: inline-block;
 }
 
@@ -889,25 +950,24 @@ button:active {
 
 .button-order {
   padding-top: 12px;
-  padding-right: 21px;
-  padding-left: 20px;
-  padding-bottom: 12px;
+  width: 150px;
+  height: 42px;
+  text-align: center;
 }
 
 .second-header {
   min-height: 278px;
 }
 
-.myname-block {
-  display: flex;
-  margin-left: 770px; 
-}
-
 .myname {
-  padding-bottom: 17px;
-  padding-top: 14px;
-  padding-right: 41px;
-  padding-left: 48px;
+  width: 300px;
+  height: 46px;
+  display: inline-block;
+  padding-top: 15px;
+  text-align: center;
+  position: relative;
+  left: 640px;
+  bottom: 70px;
 }
 
 .mycabinet {
@@ -916,6 +976,10 @@ button:active {
 
 .breadcrumbs {
   display: flex;
+  margin: 0;
+  padding: 0;
+  margin-top: 23px;
+  padding-left: 50px;
 }
 
 .breadcrumbs-item-block {
@@ -924,14 +988,15 @@ button:active {
 
 .main-navigation {
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .main-title {
-  min-height: 88px;
-  padding-top: 31px;
-  padding-left: 28px;
-  margin-left: 0px;
-  margin-right: 130px;
+  width: 910px;
+  height: 91px;
+  padding-top: 30px;
+  padding-left: 30px; 
 }
 
 .top-filter-title {
@@ -941,16 +1006,23 @@ button:active {
   font-weight: regular;
   color: #000000;
   text-transform: uppercase;
-  background-color: #f7f3ec;
-  margin-left: 0px;
-  min-width: 220px;
+  margin: 0;
   padding: 0;
+  padding-top: 14px;
+  padding-left: 17px;
+  background-color: #f7f3ec;
+}
+
+.filter {
+  width: 203px;
+  height: 24px;
 }
 
 .first-filter-menu {
-  display: flex;
-  min-height: 38px;
-  margin-right: 130px;
+  height: 38px;
+  width: 700px;
+  margin: 0;
+  padding: 0;
   margin-left: 20px;
 }
 
@@ -962,9 +1034,9 @@ button:active {
 }
 
 .filter-top-menu {
-  min-height: 38px;
-  width: 700px;
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .filter-menu {
@@ -974,6 +1046,9 @@ button:active {
 .catalog-list {
   display: flex;
   width: 800px;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
 }
 
 .catalog-item {
@@ -1030,22 +1105,22 @@ button:active {
   display: block;
 }
 
-.pagination {
+.pagination-list {
   display: flex;
   flex-direction: row;
-}
-
-.pagination-item,
-.pagination-item-current{
-  height: 39px;
-  margin-right: 14px;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 289px;
+  height: 47px;
 }
 
 .perforation-text {
   min-height: 261px;
-  display: flex;
-  flex-direction: column;
   background-color: #f2f6f8;
+  margin: 0;
+  padding: 0;
 }
 
 .title-block {
@@ -1062,8 +1137,16 @@ button:active {
   margin-bottom: 31px;
 }
 
+.logo {
+  height: 40px;
+  width: 40px;
+}
+
 .menu-footer {
   display: flex;
+  margin: 0;
+  padding: 0;
+  margin-top: 13px;
 }
 
 .menu-footer-item {
@@ -1071,12 +1154,15 @@ button:active {
 }
 
 .menu-footer {
-  padding-left: 100px;
+  margin-left: 100px;
 }
 
 .second-menu-footer {
   display: flex;
-  margin-left: 200px;
+  margin: 0;
+  padding: 0;
+  margin-left: 220px;
+
 }
 
 .second-menu-footer-item {
@@ -1087,6 +1173,7 @@ button:active {
   min-height: 106px;
   display: flex;
   width: 100%;
+  flex-direction: row;
 }
 
 .second-footer-text {
@@ -1118,6 +1205,11 @@ button:active {
  background: #212a3a;
  margin-right: 8px;
 
+}
+
+.circl:hover,
+.circl:active{
+  background: #ee3643;
 }
 
 .our-contact {
@@ -1164,6 +1256,9 @@ button:active {
 
 .offer-list {
   display: flex;
+  margin: 0;
+  padding: 0;
+  margin-top: 60px;
 }
 
 .catalog-wrapper-column {
@@ -1186,6 +1281,9 @@ button:active {
   width: 940px;
   height: 89px;
   background-color: #f9f5f0;
+  margin: 0;
+  padding: 0;
+  margin-top: 52px;
 }
 
 .all-button {
@@ -1209,6 +1307,9 @@ button:active {
   flex-wrap: wrap;
   width: 1000px;
   min-height: 317px;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
 }
 
 .manufacture-item {
@@ -1270,8 +1371,8 @@ button:active {
   line-height: 20px;
   font-weight: bold;
   color: #ffffff;
-  padding-right: 170px;
-  padding-left: 46px;
+  width: 260px;
+  height: 42px;
   padding-top: 12px;
 }
 
@@ -1314,7 +1415,8 @@ button:active {
 
 .second-offer-wrapper {
   display: flex;
-  margin-left: -10px; 
+  margin: 0;
+  padding: 0; 
 }
 
 .services-delivery,
@@ -1345,7 +1447,19 @@ button:active {
 
 .equipment-list {
   flex-wrap: wrap;
-  margin-left: -250px;
+  margin: 0;
+  padding: 0;
+  width: 750px;
+}
+
+.equipment-list li: nth-child(1),
+.equipment-list li: nth-child(4),
+.equipment-list li: nth-child(7) {
+  margin-left: 20px;
+}
+
+.equipment-list li {
+  margin-top: 20px;
 }
 
 .second-filter-menu {
@@ -1355,11 +1469,6 @@ button:active {
 
 .equipment-text {
   margin-left: 0px;
-}
-
-.pagination-item {
-  width: 39px;
-  height: 37px;
 }
 
 .pagination-item-list {
@@ -1433,4 +1542,135 @@ button:active {
 
 .login-link.registration {
   padding-left: 24px;
+}
+
+.second-header-section {
+  margin: 0;
+  padding: 0;
+}
+
+.my-order {
+  position: relative;
+  right: 130px; 
+  bottom: 60px;
+}
+
+.my-cabinet {
+  position: relative;
+  right: 0px; 
+  bottom: 78px;
+}
+
+.first {
+  width: 60px;
+  height: 24px;
+  margin-left: 139px;
+}
+
+.second  {
+  width: 60px;
+  height: 25px;
+  margin-left: 67px;
+}
+
+.third {
+  width: 120px;
+  height: 22px;
+  margin-left: 67px;
+}
+
+.first-filter {
+  list-style: none;
+  width: 220px;
+  margin: 0;
+  padding: 0;
+}
+
+.second-filter {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.third-filter {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination-item {
+  width: 38px;
+  height: 38px;
+}
+
+.pagination-item-next {
+  width: 140px;
+  text-align: center;
+}
+
+.all-button:hover {
+  background-color: #ca2c37;
+}
+
+.all-button:active {
+  background-color: #ba2732;
+}
+
+.services-delivery:hover,
+.services-garantee:hover,
+.services-credit:hover {
+  background-color: #293449;
+}
+
+.services-delivery:active,
+.services-garantee:active,
+.services-credit:active {
+  background-color: #ffffff;
+  color: #32425c;
+}
+
+.myname:hover {
+  color: #32425c;
+}
+
+.myname:active {
+  color: #32425c;
+}
+
+.mycabinet:hover {
+  color: #ee3643;
+}
+
+.mycabinet:active {
+  color: #b7bfc8;
+}
+
+.top-filter:hover {
+  color: #000000;
+  border-bottom: 1px solid #ee3643;
+}
+
+.top-filter:active {
+  color: #ee3643;
+  border-bottom: none;
+}
+
+.checkbox {
+  color: #c6c6c6;
+}
+
+.pagination-item:hover,
+.pagination-item-next:hover {
+  border: 1px solid #bdc6ca;
+}
+
+.pagination-item:active,
+.pagination-item-next:active {
+  border: 1px solid #ee3643;
+}
+
+.menu-footer:active,
+.second-menu-footer:active {
+  border-bottom: none;
+  opacity: 0.5;
 }
