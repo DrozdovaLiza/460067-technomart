@@ -1674,3 +1674,25 @@ button:active {
   border-bottom: none;
   opacity: 0.5;
 }
+
+.garantee-block-show {
+  display: block;
+}
+
+input [type="checkbox"] {
+  display: none;
+}
+
+input [type="checkbox"] + label {
+  position: relative;
+  padding-left: 14px;
+}
+
+input [type="checkbox"] + label::before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/checkbox-off.svg) no-repeat;
+}
+

@@ -369,6 +369,16 @@
       </div> 
  
     </footer>
+
+    <script type="text/javascript">
+      var link = document.querySelector(".services-garantee");
+      var popup = document.querySelector(".garantee-block-show");
+
+      link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.add("garantee-block-show")
+      });
+    </script>
   
   </body>
 
